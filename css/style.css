@@ -39,7 +39,26 @@ main {
   color: #aaa;
   top: 54.5%;
   right: 27%;
-  font-size: clamp(8px, 5vw, 20px);
+  font-size: clamp(8px, 5vw, 15px);
+}
+.pokemon__atrbs {
+  display: flex;
+  position: absolute;
+  font-weight: 600;
+  color: #3a444d;
+  top: 57.5%;
+  right: 40%;
+  font-size: clamp(8px, 5vw, 14px);
+  gap: 5px;
+}
+.pokemon__atrbs :is(.pokemon__hp){
+  color: #d10000 ;
+}
+.pokemon__atrbs :is(.pokemon__def){
+  color: #21c729;
+}
+.pokemon__atrbs :is(.pokemon__atk){
+  color: #f5bd6a ;
 }
 
 .pokemon__name {
@@ -57,7 +76,7 @@ main {
 
 .input__search {
   width: 100%;
-  padding: 4%;
+  padding: 3%;
   outline: none;
   border: 2px solid #333;
   border-radius: 5px;
@@ -67,7 +86,7 @@ main {
   box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
 }
 
-.kicks{
+.types{
   position: absolute;
   font-weight: 600;
   color: #ffffff;
@@ -76,9 +95,10 @@ main {
   left: 13.5%;
   justify-content: space-between;
   align-items: center;
+  text-transform: capitalize;
 }
-.type,
-.type2{
+.type
+{
   width: 50%;
   padding: 4%;
   border-radius: 5px;
@@ -88,13 +108,35 @@ main {
   text-transform: capitalize;
  
 }
+.kicks{
+  position: absolute;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  top: 220%;
+  left: 1.5%;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  
+}
+.kick
+{
+  width: 50%;
+  padding: 4%;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
 
 
 .buttons {
   position: absolute;
   bottom: 10%;
   left: 50%;
-  width: 65%;
+  width: 55%;
   transform: translate(-57%, 0);
   display: flex;
   gap: 20px;
