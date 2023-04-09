@@ -158,3 +158,10 @@ main {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }
+.logo{
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-63%, 20%);
+}
